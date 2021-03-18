@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+} 
+
+.header {
+  display: flex;
+  height: 100px;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+
+}
+.header-buttons a {
+  margin-right: 10px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+.header-buttons a {
+  color: white;
+}
+
+
+.contenedor-principal {
+  display: flex;
+  background: #000;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+
+.content-image img {
+  max-width: 100%;
+  width: 353px;
+  height: 552px;
+}
+
+ .content-text {
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 803px;
+  height: 454px;
+} 
+
+.content-text span {
+  margin-bottom: 20px ;
+}
+
+
+/* tablets */
+@media screen and (max-width: 767px) {
+  .header {
+
+  }
+}
+
+/* celular de tamaño normal */
+@media screen and (max-width: 480px) {
+  
+}
+
+/* celular chiquito */
+@media screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    height: 200px;
+  } 
+  .contenedor-principal {
+    height: calc(100vh-200px);
+    flex-direction: column;
+  }
+  .content-image img {
+    
+    width: 200px;
+    height: 309px;
+}
+  .content-image {
+    display: flex;
+    justify-content: center;
+  }
+  .content-text {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
